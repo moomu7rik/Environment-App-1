@@ -33,5 +33,20 @@
             android:layout_gravity="center"
         android:text="@string/status"
  />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Wifi"
+            android:id="@+id/btnwifi"
+            android:onClick="wifi"
+            android:layout_weight="1"
+            />
+    </RelativeLayout>
+
+
 
 </LinearLayout>

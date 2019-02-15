@@ -8,9 +8,14 @@
     <string name="enter_message">enter_message</string>
     <string name="listen">LISTEN</string>
 
+    <string name="view">VIEW</string>
+
     <string name="send">SEND</string>
     <string name="status">status</string>
     <string name="getlocation">Location</string>
     <string name="indoor"><u>Indoor Information</u></string>
     <string name="outdoor"><u>Outdoor Information</u></string>
+    <string name="snooze">snooze</string>
+    <string name="no_massage">no massage</string>
+    <string name="start_gps">Start GPS</string>
 </resources>

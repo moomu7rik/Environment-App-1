@@ -7,6 +7,20 @@
     android:orientation="vertical"
     android:background="@color/main_color"
     tools:context="com.example.saurabhomer.cityprobe.Datasets">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_gps"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            />
+    </RelativeLayout>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +29,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="snooze"
+        android:text="@string/snooze"
         android:id="@+id/snooze"
         android:onClick="btnsnooze"
         />
@@ -24,7 +38,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/alertmsg"
         android:textStyle="bold"
-        android:text="no massage"
+        android:text="@string/no_massage"
         android:textColor="#fe3b2824"/>
     <TextView
         android:id="@+id/data_msg"

@@ -169,6 +169,7 @@ public class Graphset extends AppCompatActivity {
                         e.printStackTrace();
                     }
 
+
                     String[] arr_data = tempMsg.split(",");
                     //Toast.makeText(MainActivity.this, "data"+arr_data[9], Toast.LENGTH_SHORT).show();
                     // Ref=database.getReference("Data");

@@ -3,6 +3,7 @@ package com.example.saurabhomer.cityprobe;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
+import android.content.Intent;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
@@ -62,6 +63,12 @@ public class Bluetooth_set extends AppCompatActivity {
             }
         });
     }
+    public void wifi(View view) {
+        Intent intent7 = new Intent(this, wifiActivity.class);
+        startActivity(intent7);
+    }
+
+
     private void implementListeners() {
 
 

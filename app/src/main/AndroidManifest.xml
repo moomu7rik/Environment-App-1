@@ -15,6 +15,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
 
     <application
         android:allowBackup="false"
@@ -42,8 +49,15 @@
         <activity android:name=".Graphset" />
         <activity android:name=".Datasets" />
         <activity android:name=".Indoor" />
-        <activity android:name=".Outdoor"/>
-        <activity android:name=".Settings"/>
+        <activity android:name=".Outdoor" />
+        <activity android:name=".Settings" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".Trails" />
+        <activity android:name=".Pmtt" />
+        <activity android:name=".Co" />
+        <activity android:name=".Not" />
+        <activity android:name=".wifiActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCqOYsIWVbf0w9TGDlqb_oD5pux4UJSRXk" />

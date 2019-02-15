@@ -33,7 +33,8 @@ public class CardMenu extends AppCompatActivity {
         menu4=(CardView) findViewById(R.id.menu4);
         menu5=(CardView) findViewById(R.id.menu5);
         menu6=(CardView) findViewById(R.id.menu6);
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+        {
             requestPermissions(new String[]{
                     android.Manifest.permission.ACCESS_FINE_LOCATION, android.Manifest.permission.ACCESS_COARSE_LOCATION,
                     android.Manifest.permission.INTERNET, android.Manifest.permission.BLUETOOTH,
@@ -43,7 +44,6 @@ public class CardMenu extends AppCompatActivity {
         }
 
         bt=BluetoothAdapter.getDefaultAdapter();
-        //Toast.makeText(this, ""+socket, Toast.LENGTH_SHORT).show();
         if(!bt.isEnabled())
         {
             /*****first method to enable bluetooth*****/
@@ -86,7 +86,8 @@ public class CardMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i=new Intent(CardMenu.this,Mapset.class);
+
+                Intent i=new Intent(CardMenu.this,MapActivity.class);
                 startActivity(i);
 
             }
